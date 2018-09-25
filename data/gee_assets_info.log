@@ -1,0 +1,63 @@
+2018-09-25 11:20:18,047 :: oauth2client.transport :: INFO :: Attempting refresh to obtain initial access_token
+2018-09-25 11:20:18,047 :: oauth2client.client :: INFO :: Refreshing access_token
+2018-09-25 11:20:37,064 :: root :: INFO :: New collection users/daviddralle/bessv2_1 created
+2018-09-25 11:20:38,941 :: root :: INFO :: Processing image 1 out of 192: /Users/daviddralle/Dropbox/research/bess_v2/monthly_ET/ET_06-2010.tif
+2018-09-25 11:21:20,494 :: root :: INFO :: Processing image 2 out of 192: /Users/daviddralle/Dropbox/research/bess_v2/monthly_ET/ET_07-2004.tif
+2018-09-25 11:21:59,340 :: root :: INFO :: Processing image 3 out of 192: /Users/daviddralle/Dropbox/research/bess_v2/monthly_ET/ET_07-2010.tif
+2018-09-25 11:22:33,392 :: root :: INFO :: Processing image 4 out of 192: /Users/daviddralle/Dropbox/research/bess_v2/monthly_ET/ET_06-2004.tif
+2018-09-25 11:23:09,821 :: root :: INFO :: Processing image 5 out of 192: /Users/daviddralle/Dropbox/research/bess_v2/monthly_ET/ET_10-2016.tif
+2018-09-25 11:23:40,953 :: root :: INFO :: Processing image 6 out of 192: /Users/daviddralle/Dropbox/research/bess_v2/monthly_ET/ET_11-2002.tif
+2018-09-25 11:24:14,067 :: root :: INFO :: Processing image 7 out of 192: /Users/daviddralle/Dropbox/research/bess_v2/monthly_ET/ET_11-2016.tif
+2018-09-25 11:24:56,789 :: root :: INFO :: Processing image 8 out of 192: /Users/daviddralle/Dropbox/research/bess_v2/monthly_ET/ET_10-2002.tif
+2018-09-25 11:25:37,719 :: root :: INFO :: Processing image 9 out of 192: /Users/daviddralle/Dropbox/research/bess_v2/monthly_ET/ET_10-2003.tif
+2018-09-25 11:26:30,551 :: root :: INFO :: Processing image 10 out of 192: /Users/daviddralle/Dropbox/research/bess_v2/monthly_ET/ET_11-2003.tif
+2018-09-25 11:27:10,421 :: root :: INFO :: Processing image 11 out of 192: /Users/daviddralle/Dropbox/research/bess_v2/monthly_ET/ET_07-2011.tif
+2018-09-25 11:28:06,216 :: root :: ERROR :: Upload of ET_07-2011 has failed.
+Traceback (most recent call last):
+  File "/Users/daviddralle/Dropbox/research/bess_v2/github/data/gee_asset_manager/gee_asset_manager/batch_uploader.py", line 115, in upload
+    task_id = __start_ingestion_task(asset_request)
+  File "/Users/daviddralle/anaconda2/envs/py3k/lib/python3.5/site-packages/retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "/Users/daviddralle/anaconda2/envs/py3k/lib/python3.5/site-packages/retrying.py", line 206, in call
+    return attempt.get(self._wrap_exception)
+  File "/Users/daviddralle/anaconda2/envs/py3k/lib/python3.5/site-packages/retrying.py", line 247, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "/Users/daviddralle/anaconda2/envs/py3k/lib/python3.5/site-packages/six.py", line 693, in reraise
+    raise value
+  File "/Users/daviddralle/anaconda2/envs/py3k/lib/python3.5/site-packages/retrying.py", line 200, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/Users/daviddralle/Dropbox/research/bess_v2/github/data/gee_asset_manager/gee_asset_manager/batch_uploader.py", line 175, in __start_ingestion_task
+    task_id = ee.data.newTaskId(1)[0]
+  File "/Users/daviddralle/anaconda2/envs/py3k/lib/python3.5/site-packages/ee/data.py", line 587, in newTaskId
+    return send_('/newtaskid', args)
+  File "/Users/daviddralle/anaconda2/envs/py3k/lib/python3.5/site-packages/ee/data.py", line 889, in send_
+    response, content = send_with_backoff()
+  File "/Users/daviddralle/anaconda2/envs/py3k/lib/python3.5/site-packages/ee/data.py", line 880, in send_with_backoff
+    url, method=opt_method, body=payload, headers=headers)
+  File "/Users/daviddralle/anaconda2/envs/py3k/lib/python3.5/site-packages/oauth2client/transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "/Users/daviddralle/anaconda2/envs/py3k/lib/python3.5/site-packages/oauth2client/transport.py", line 282, in request
+    connection_type=connection_type)
+  File "/Users/daviddralle/anaconda2/envs/py3k/lib/python3.5/site-packages/httplib2/__init__.py", line 1514, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/Users/daviddralle/anaconda2/envs/py3k/lib/python3.5/site-packages/httplib2/__init__.py", line 1264, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/Users/daviddralle/anaconda2/envs/py3k/lib/python3.5/site-packages/httplib2/__init__.py", line 1217, in _conn_request
+    response = conn.getresponse()
+  File "/Users/daviddralle/anaconda2/envs/py3k/lib/python3.5/http/client.py", line 1198, in getresponse
+    response.begin()
+  File "/Users/daviddralle/anaconda2/envs/py3k/lib/python3.5/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/Users/daviddralle/anaconda2/envs/py3k/lib/python3.5/http/client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Users/daviddralle/anaconda2/envs/py3k/lib/python3.5/socket.py", line 576, in readinto
+    return self._sock.recv_into(b)
+  File "/Users/daviddralle/anaconda2/envs/py3k/lib/python3.5/ssl.py", line 937, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Users/daviddralle/anaconda2/envs/py3k/lib/python3.5/ssl.py", line 799, in read
+    return self._sslobj.read(len, buffer)
+  File "/Users/daviddralle/anaconda2/envs/py3k/lib/python3.5/ssl.py", line 583, in read
+    v = self._sslobj.read(len, buffer)
+TimeoutError: [Errno 60] Operation timed out
+2018-09-25 11:28:06,233 :: root :: INFO :: Processing image 12 out of 192: /Users/daviddralle/Dropbox/research/bess_v2/monthly_ET/ET_06-2005.tif
+2018-09-25 11:28:43,452 :: root :: INFO :: Processing image 13 out of 192: /Users/daviddralle/Dropbox/research/bess_v2/monthly_ET/ET_06-2011.tif
