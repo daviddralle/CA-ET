@@ -1,7 +1,5 @@
 # CA-ET
 
-<!---
-Dataset and code required to replicate analysis in the manuscript *How Much Water is Evaporated Across California?:  A Multi-Year Assessment Using a Biophysical Model Forced with Satellite Remote Sensing Data* by D. Baldocchi, D. Dralle, G. de sa Queen, C. Jiang, and Y. Ryu, in review at *Environmental Research Letters*. See the notebook `ET_analysis_zones.ipynb` for scripts and plots. 
+Dataset and code required to replicate analysis in the manuscript *How Much Water is Evaporated Across California?:  A Multi-Year Assessment Using a Biophysical Model Forced with Satellite Remote Sensing Data* by D. Baldocchi, D. Dralle, G. de sa Queen, C. Jiang, and Y. Ryu, in review at *Water Resources Research*. 
 
-The file `python3_environment.yml` includes the package list required to run the included python notebooks. Once you have Anaconda (<http://anaconda.org>) on your machine, you can install this particular environment with `conda env create -f python3_environment.yml`. To learn more about how to use the `conda` command and environments, go to <https://conda.io/docs/user-guide/tasks/manage-environments.html>.
---->
+Data extraction is performed via the Python Google Earth Engine API in the [Jupyter Notebook](http://jupyter.org/) `/notebooks/extract_crop_et_data.ipynb`. Data plotting and analysis of water year evapotranspiration can be found in the notebook `/notebooks/plot_data.ipynb`. Saved water year data can be found in the `/data` folder. ET is reported in units of millimeters. 
