@@ -4,4 +4,4 @@ Dataset and code required to replicate analysis in the manuscript *How Much Wate
 
 Data extraction is performed via the Python Google Earth Engine API in the [Jupyter Notebook](http://jupyter.org/) `/notebooks/extract_crop_et_data.ipynb`. Data plotting and analysis of water year evapotranspiration can be found in the notebook `/notebooks/plot_data.ipynb`. Saved water year data can be found in the `/data` folder. ET is reported in units of millimeters. 
 
-BESS ET dataset information can be found on Google Earth Engine [here](https://code.earthengine.google.com/?asset=users/daviddralle/bessv2). The Earth Engine asset ID is `users/daviddralle/bessv2`. The dataset is publically accessible. 
+BESS ET dataset information can be found on Google Earth Engine [here](https://code.earthengine.google.com/?asset=users/daviddralle/bessv2). The Earth Engine asset ID is `users/daviddralle/bessv2`. The dataset is publicly accessible. 
